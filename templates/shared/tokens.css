@@ -1,0 +1,117 @@
+/* html-marketing tokens. Copy or link. Do not invent a second palette. */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+:root {
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --space: 8px;
+
+  /* Atlas field (default connected set) */
+  --field: #0b3d2e;
+  --field-2: #07281e;
+  --type: #ffffff;
+  --type-muted: rgba(255, 255, 255, 0.72);
+  --line: rgba(255, 255, 255, 0.14);
+  --surface: #ffffff;
+  --ink: #101418;
+  --muted: #5a6570;
+  --accent: #1fa971;
+  --accent-soft: #d8f3e7;
+  --bezel: #111111;
+  --shadow: 0 40px 80px rgba(0, 0, 0, 0.38);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--field);
+  color: var(--type);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.canvas {
+  position: relative;
+  overflow: hidden;
+  background: var(--field);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--type-muted);
+}
+
+.brand .ph {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  margin: 0;
+  color: var(--type);
+}
+
+.support {
+  margin: 0;
+  color: var(--type-muted);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.field-atlas {
+  --field: #0b3d2e;
+  --field-2: #07281e;
+  background:
+    radial-gradient(900px 520px at 100% 0%, rgba(31, 169, 113, 0.18), transparent 55%),
+    linear-gradient(180deg, var(--field) 0%, var(--field-2) 100%);
+}
+
+.field-ink {
+  --field: #0b1220;
+  --field-2: #070b14;
+  --accent: #6aa8ff;
+  background:
+    radial-gradient(900px 520px at 100% 0%, rgba(106, 168, 255, 0.16), transparent 55%),
+    linear-gradient(180deg, var(--field) 0%, var(--field-2) 100%);
+}
+
+.field-sand {
+  --field: #f3efe6;
+  --field-2: #e7e0d2;
+  --type: #14110e;
+  --type-muted: rgba(20, 17, 14, 0.62);
+  --line: rgba(20, 17, 14, 0.1);
+  --accent: #0b3d2e;
+  background: linear-gradient(180deg, var(--field) 0%, var(--field-2) 100%);
+}
+
+.field-clay {
+  --field: #e8e4dc;
+  --field-2: #d9d3c8;
+  --type: #1a1a1a;
+  --type-muted: rgba(26, 26, 26, 0.62);
+  --bezel: #c8c2b6;
+  background: linear-gradient(180deg, var(--field) 0%, var(--field-2) 100%);
+}

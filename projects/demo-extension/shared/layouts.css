@@ -1,0 +1,150 @@
+/* Locked layouts. Same geometry across every frame in a set.
+   Caption + device + field. Nothing else competes. */
+
+/* Landscape store / Chrome: caption left, device overflowing right */
+.layout-split {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+}
+
+.layout-split .copy {
+  padding: 72px 48px 72px 72px;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 2;
+}
+
+.layout-split .device-stage {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 48px 0 0 0;
+}
+
+.layout-split .browser {
+  transform: translate(48px, 36px);
+}
+
+.layout-split .phone {
+  transform: translate(24px, 80px);
+}
+
+/* Portrait phone store: caption top, device covering the rest */
+.layout-caption-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-caption-top .copy {
+  padding: 160px 80px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 3;
+  flex: 0 0 auto;
+}
+
+.layout-caption-top .headline {
+  max-width: 92%;
+}
+
+.layout-caption-top .device-stage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 8px;
+  z-index: 1;
+}
+
+.layout-caption-top .phone {
+  width: 70%;
+  max-width: 920px;
+  height: 1680px;
+  transform: translateY(12px);
+}
+
+/* Promo tile: caption only. Device will not survive 440x280. */
+.layout-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 30px;
+}
+
+/* Marquee: wider split */
+.layout-marquee {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+}
+
+.layout-marquee .copy {
+  padding: 64px 48px 64px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 640px;
+}
+
+.layout-marquee .device-stage {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.layout-marquee .browser {
+  width: 640px;
+  height: 420px;
+  transform: translate(40px, 40px);
+}
+
+/* Social feed: one idea, 8% inset */
+.layout-feed {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8%;
+}
+
+.layout-feed .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 92%;
+}
+
+/* Thumbnail 16:9: huge type, subject left, keep bottom-right clear */
+.layout-thumb {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+  padding: 48px 56px 64px;
+}
+
+.layout-thumb .copy {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 2;
+}
+
+.layout-thumb .headline {
+  font-size: 64px;
+  line-height: 1.05;
+}
+
+.layout-pfp {
+  display: grid;
+  place-items: center;
+  padding: 12%;
+}

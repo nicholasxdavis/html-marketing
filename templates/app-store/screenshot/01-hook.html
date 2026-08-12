@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>iPhone 6.9 hook</title>
+    <link rel="stylesheet" href="../../shared/tokens.css" />
+    <link rel="stylesheet" href="../../shared/device.css" />
+    <link rel="stylesheet" href="../../shared/layouts.css" />
+    <style>
+      body, .canvas { width: 1320px; height: 2868px; }
+      .headline { font-size: 92px; }
+      .support { font-size: 32px; max-width: 980px; }
+      .brand { font-size: 22px; }
+      .ui {
+        height: 100%;
+        background: #f6f7f8;
+        padding: 72px 28px 28px;
+        font-family: var(--font-body);
+      }
+      .search {
+        height: 64px; border-radius: 14px; background: #fff; border: 1px solid #e4e8ec;
+        display: flex; align-items: center; padding: 0 20px; font-size: 22px; color: #101418; margin-bottom: 20px;
+      }
+      .row {
+        height: 72px; border-radius: 14px; background: #fff; margin-bottom: 12px;
+        display: flex; align-items: center; padding: 0 20px; color: #5a6570; font-size: 22px;
+      }
+      .row.active { background: #d8f3e7; color: #101418; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas field-atlas layout-caption-top">
+      <div class="copy">
+        <div class="brand">Northline</div>
+        <h1 class="headline">Stop digging through tabs.</h1>
+        <p class="support">Find the page you need in seconds.</p>
+      </div>
+      <div class="device-stage">
+        <div class="phone">
+          <div class="phone-island"></div>
+          <div class="phone-screen">
+            <div class="ui">
+              <div class="search">pricing research</div>
+              <div class="row">Project brief - Q3</div>
+              <div class="row active">Pricing research</div>
+              <div class="row">Design references</div>
+              <div class="row">Customer notes</div>
+              <div class="row">Archive</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

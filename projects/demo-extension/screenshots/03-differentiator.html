@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Differentiator</title>
+    <link rel="stylesheet" href="../shared/tokens.css" />
+    <link rel="stylesheet" href="../shared/device.css" />
+    <link rel="stylesheet" href="../shared/layouts.css" />
+    <style>
+      body, .canvas { width: 1280px; height: 800px; }
+      .headline { font-size: 56px; }
+      .support { font-size: 20px; max-width: 420px; }
+      .compare {
+        position: absolute; inset: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      }
+      .col {
+        background: #fff; border-radius: 12px; padding: 22px; border: 1px solid #e4e8ec;
+      }
+      .col.good { outline: 2px solid rgba(11, 110, 79, 0.35); }
+      .label { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #5a6570; margin-bottom: 16px; font-weight: 600; }
+      .col.good .label { color: #0b6e4f; }
+      .line { height: 12px; border-radius: 6px; background: #eceff2; margin-bottom: 10px; }
+      .metric { margin-top: 18px; font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas field-atlas layout-split" data-beat="differentiator">
+      <div class="copy">
+        <div class="brand">Northline</div>
+        <h1 class="headline">Twenty minutes becomes twenty seconds.</h1>
+        <p class="support">Stay in flow. Let search do the walking.</p>
+      </div>
+      <div class="device-stage">
+        <div class="browser">
+          <div class="browser-chrome">
+            <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+            <div class="browser-omnibox">northline.app</div>
+          </div>
+          <div class="browser-body">
+            <div class="compare">
+              <div class="col">
+                <div class="label">Without</div>
+                <div class="line" style="width:80%"></div>
+                <div class="line" style="width:62%"></div>
+                <div class="line" style="width:44%"></div>
+                <div class="metric" style="color:#5a6570">~20 min</div>
+              </div>
+              <div class="col good">
+                <div class="label">With Northline</div>
+                <div class="line" style="width:56%;background:#d8f3e7"></div>
+                <div class="line" style="width:38%;background:#d8f3e7"></div>
+                <div class="metric" style="color:#0b6e4f">~20 sec</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

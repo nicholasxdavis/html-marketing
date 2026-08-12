@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>html-marketing wordmark</title>
+    <link rel="stylesheet" href="../shared/tokens.css" />
+    <style>
+      body, .canvas {
+        width: 1400px;
+        height: 420px;
+      }
+      .canvas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 80px;
+        gap: 14px;
+      }
+      .mark {
+        font-family: var(--font-display);
+        font-weight: 800;
+        font-size: 92px;
+        letter-spacing: -0.06em;
+        line-height: 0.92;
+        color: #fff;
+        margin: 0;
+      }
+      .mark span {
+        color: var(--accent);
+      }
+      .tag {
+        margin: 0;
+        font-size: 22px;
+        color: var(--type-muted);
+        letter-spacing: 0.02em;
+      }
+      .rule {
+        width: 120px;
+        height: 3px;
+        background: var(--accent);
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas field-atlas">
+      <p class="mark">html<span>-</span>marketing</p>
+      <div class="rule"></div>
+      <p class="tag">Write HTML. Render store creatives.</p>
+    </div>
+  </body>
+</html>

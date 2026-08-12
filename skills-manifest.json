@@ -1,0 +1,18 @@
+{
+  "source": "html-marketing",
+  "core": [
+    "html-marketing",
+    "html-marketing-core",
+    "html-marketing-creative",
+    "html-marketing-cli",
+    "html-marketing-device",
+    "html-marketing-prompts"
+  ],
+  "workflows": [
+    "store-listing",
+    "promo-graphics",
+    "motion-sting",
+    "product-launch-set",
+    "social-post"
+  ]
+}

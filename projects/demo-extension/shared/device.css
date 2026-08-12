@@ -1,0 +1,130 @@
+/* Device frames. Real, clay, outline, frameless. Keep bezel geometry locked across a set. */
+
+.phone {
+  position: relative;
+  width: 340px;
+  height: 720px;
+  background: var(--bezel);
+  border-radius: 52px;
+  padding: 11px;
+  box-shadow: var(--shadow);
+}
+
+.phone.clay {
+  --bezel: #d7d2c8;
+  box-shadow: 0 28px 56px rgba(20, 17, 14, 0.18);
+}
+
+.phone.outline {
+  background: transparent;
+  border: 2px solid var(--type);
+  box-shadow: none;
+  padding: 10px;
+}
+
+.phone.frameless {
+  background: transparent;
+  padding: 0;
+  box-shadow: var(--shadow);
+}
+
+.phone-island {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  width: 96px;
+  height: 28px;
+  transform: translateX(-50%);
+  background: var(--bezel);
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.phone.frameless .phone-island,
+.phone.outline .phone-island {
+  display: none;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 42px;
+  overflow: hidden;
+  background: var(--surface);
+  color: var(--ink);
+  position: relative;
+}
+
+.phone.frameless .phone-screen {
+  border-radius: 36px;
+}
+
+.phone.tilt-right {
+  transform: rotate(8deg);
+}
+
+.phone.tilt-left {
+  transform: rotate(-8deg);
+}
+
+/* Browser / desktop frame for extension and Mac listings */
+.browser {
+  width: 720px;
+  height: 520px;
+  background: var(--surface);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+}
+
+.browser-chrome {
+  height: 46px;
+  background: #eceff2;
+  border-bottom: 1px solid #d8dee4;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c9d0d6;
+}
+
+.browser-omnibox {
+  flex: 1;
+  height: 26px;
+  margin-left: 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #d5dbe2;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.browser-body {
+  flex: 1;
+  overflow: hidden;
+  background: #f6f7f8;
+  position: relative;
+}
+
+.device-stage {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.device-stage > * {
+  pointer-events: auto;
+}

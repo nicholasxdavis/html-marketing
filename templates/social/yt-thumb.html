@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube thumbnail</title>
+    <link rel="stylesheet" href="../shared/tokens.css" />
+    <link rel="stylesheet" href="../shared/layouts.css" />
+    <link rel="stylesheet" href="../shared/icons.css" />
+    <style>
+      body, .canvas { width: 1280px; height: 720px; }
+      .headline { font-size: 72px; max-width: 560px; }
+      .mark {
+        width: 280px;
+        height: 280px;
+        border-radius: 36px;
+        background: rgba(255, 255, 255, 0.08);
+        display: grid;
+        place-items: center;
+        justify-self: end;
+      }
+      .mark .ph { font-size: 120px; color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="canvas field-atlas layout-thumb">
+      <div class="copy">
+        <div class="brand">Northline</div>
+        <h1 class="headline">Stop digging through tabs.</h1>
+      </div>
+      <div class="mark" aria-hidden="true"><i class="ph ph-xl ph-browser"></i></div>
+    </div>
+  </body>
+</html>

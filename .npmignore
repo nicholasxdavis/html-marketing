@@ -1,0 +1,16 @@
+vendor
+src
+tests
+output
+.venv
+.agents
+.cursor
+.git
+.github
+*.log
+.env
+.tmp
+.cache
+docs
+scripts
+pyproject.toml

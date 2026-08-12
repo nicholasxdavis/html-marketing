@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Northline 4s sting</title>
+    <link rel="stylesheet" href="../../shared/tokens.css" />
+    <style>
+      body, .canvas { width: 1920px; height: 1080px; overflow: hidden; }
+      .canvas {
+        display: flex; flex-direction: column; justify-content: center;
+        padding: 96px 120px; gap: 28px;
+      }
+      .brand { font-size: 22px; opacity: 0; transform: translateY(16px); }
+      .headline { font-size: 96px; max-width: 1400px; opacity: 0; transform: translateY(28px); }
+      .support { font-size: 28px; max-width: 720px; opacity: 0; transform: translateY(20px); }
+      .rule { width: 0; height: 3px; background: var(--accent); margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <div class="canvas field-atlas" id="stage">
+      <div class="brand" id="brand">Northline</div>
+      <h1 class="headline" id="title">Stop digging through tabs.</h1>
+      <div class="rule" id="rule"></div>
+      <p class="support" id="sub">Find what you need in seconds.</p>
+    </div>
+    <script>
+      const duration = 4;
+      const brand = document.getElementById("brand");
+      const title = document.getElementById("title");
+      const sub = document.getElementById("sub");
+      const rule = document.getElementById("rule");
+      function lerp(a, b, t) { return a + (b - a) * t; }
+      function clamp01(t) { return Math.max(0, Math.min(1, t)); }
+      function ease(t) { return 1 - Math.pow(1 - t, 3); }
+      function apply(el, opacity, y) {
+        el.style.opacity = String(opacity);
+        el.style.transform = `translateY(${y}px)`;
+      }
+      function seek(t) {
+        const b = ease(clamp01((t - 0.15) / 0.55));
+        const h = ease(clamp01((t - 0.35) / 0.65));
+        const s = ease(clamp01((t - 0.75) / 0.7));
+        const r = ease(clamp01((t - 0.55) / 0.8));
+        apply(brand, b, lerp(16, 0, b));
+        apply(title, h, lerp(28, 0, h));
+        apply(sub, s, lerp(20, 0, s));
+        rule.style.width = `${lerp(0, 180, r)}px`;
+      }
+      window.__hm = { duration, seek };
+      seek(0);
+    </script>
+  </body>
+</html>

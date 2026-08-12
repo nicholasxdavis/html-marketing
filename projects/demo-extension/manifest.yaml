@@ -1,0 +1,46 @@
+name: demo-extension
+product: Northline
+platform: chrome-web-store
+style: atlas
+layout: harbor
+notes: >
+  First html-marketing project. Abstract UI proof only. No platform logos.
+  Story: Hook, Mechanism, Differentiator, Benefit, Trust.
+  Locked geometry: layout-split + browser overflow. Field stays Atlas.
+
+assets:
+  - name: 01-hook
+    src: screenshots/01-hook.html
+    preset: cws-screenshot
+    format: png
+  - name: 02-mechanism
+    src: screenshots/02-mechanism.html
+    preset: cws-screenshot
+    format: png
+  - name: 03-differentiator
+    src: screenshots/03-differentiator.html
+    preset: cws-screenshot
+    format: png
+  - name: 04-benefit
+    src: screenshots/04-benefit.html
+    preset: cws-screenshot
+    format: png
+  - name: 05-trust
+    src: screenshots/05-trust.html
+    preset: cws-screenshot
+    format: png
+  - name: promo-tile
+    src: promo/promo.html
+    preset: cws-promo-tile
+    format: png
+  - name: marquee
+    src: promo/marquee.html
+    preset: cws-marquee
+    format: png
+  - name: sting
+    src: video/sting-4s.html
+    type: video
+    preset: hd-landscape
+    duration: 4
+    fps: 30
+    format: mp4

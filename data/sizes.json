@@ -1,0 +1,93 @@
+{
+  "cws-screenshot": {"id":"cws-screenshot","width":1280,"height":800,"platform":"chrome-web-store","kind":"screenshot","min":1,"max":5,"transparency":false,"notes":"Full bleed. Square corners. No padding. Survives downscaling."},
+  "cws-screenshot-sm": {"id":"cws-screenshot-sm","width":640,"height":400,"platform":"chrome-web-store","kind":"screenshot","notes":"Smaller allowed screenshot size."},
+  "cws-promo-tile": {"id":"cws-promo-tile","width":440,"height":280,"platform":"chrome-web-store","kind":"promo","required":true,"transparency":false,"notes":"Small promo tile. Not a raw screenshot. Minimal text."},
+  "cws-marquee": {"id":"cws-marquee","width":1400,"height":560,"platform":"chrome-web-store","kind":"promo","transparency":false,"notes":"Optional marquee. Uncluttered. Brand-first."},
+  "cws-icon": {"id":"cws-icon","width":128,"height":128,"platform":"chrome-web-store","kind":"icon","notes":"Store listing icon."},
+
+  "ios-6-9": {"id":"ios-6-9","width":1320,"height":2868,"platform":"app-store","kind":"screenshot","min":1,"max":10,"notes":"iPhone 6.9 portrait. Required base. Prefer this."},
+  "ios-6-9-alt": {"id":"ios-6-9-alt","width":1290,"height":2796,"platform":"app-store","kind":"screenshot","notes":"iPhone 6.9 alternate portrait."},
+  "ios-6-9-air": {"id":"ios-6-9-air","width":1260,"height":2736,"platform":"app-store","kind":"screenshot","notes":"iPhone 6.9 Air panel portrait."},
+  "ios-6-9-land": {"id":"ios-6-9-land","width":2868,"height":1320,"platform":"app-store","kind":"screenshot","notes":"iPhone 6.9 landscape."},
+  "ios-6-5": {"id":"ios-6-5","width":1284,"height":2778,"platform":"app-store","kind":"screenshot","notes":"Legacy 6.5. Optional if 6.9 is supplied."},
+  "ios-6-3": {"id":"ios-6-3","width":1206,"height":2622,"platform":"app-store","kind":"screenshot","notes":"iPhone 6.3 portrait. Optional."},
+  "ios-ipad-13": {"id":"ios-ipad-13","width":2064,"height":2752,"platform":"app-store","kind":"screenshot","notes":"iPad 13 portrait. Required if the app runs on iPad."},
+  "ios-ipad-13-land": {"id":"ios-ipad-13-land","width":2752,"height":2064,"platform":"app-store","kind":"screenshot","notes":"iPad 13 landscape."},
+  "ios-watch": {"id":"ios-watch","width":422,"height":514,"platform":"app-store","kind":"screenshot","notes":"Apple Watch Ultra class."},
+  "ios-icon": {"id":"ios-icon","width":1024,"height":1024,"platform":"app-store","kind":"icon","transparency":false,"notes":"App Store icon. No transparency. No rounded mask."},
+  "ios-preview-69": {"id":"ios-preview-69","width":886,"height":1920,"platform":"app-store","kind":"preview","notes":"App preview video 6.9 class. 15-30s, 30fps, H.264."},
+
+  "play-phone": {"id":"play-phone","width":1080,"height":1920,"platform":"google-play","kind":"screenshot","min":2,"max":8,"notes":"Phone 9:16. Show real UI. No fake device frames."},
+  "play-phone-16-9": {"id":"play-phone-16-9","width":2160,"height":3840,"platform":"google-play","kind":"screenshot","notes":"High-res Android phone class."},
+  "play-feature": {"id":"play-feature","width":1024,"height":500,"platform":"google-play","kind":"feature","required":true,"transparency":false,"notes":"Feature graphic. Required. No transparency."},
+  "play-tablet-10": {"id":"play-tablet-10","width":1600,"height":2560,"platform":"google-play","kind":"screenshot","notes":"10 inch tablet baseline."},
+  "play-icon": {"id":"play-icon","width":512,"height":512,"platform":"google-play","kind":"icon","notes":"High-res Play icon source."},
+
+  "yt-thumb": {"id":"yt-thumb","width":1280,"height":720,"platform":"youtube","kind":"thumbnail","notes":"Video thumbnail 16:9. Keep text out of bottom-right duration badge."},
+  "yt-thumb-podcast": {"id":"yt-thumb-podcast","width":1280,"height":1280,"platform":"youtube","kind":"thumbnail","notes":"Podcast playlist cover."},
+  "yt-pfp": {"id":"yt-pfp","width":800,"height":800,"platform":"youtube","kind":"pfp","notes":"Channel profile. Displayed tiny. Center the mark."},
+  "yt-banner": {"id":"yt-banner","width":2560,"height":1440,"platform":"youtube","kind":"cover","safe":{"x":1546,"y":423},"notes":"Channel art. Keep text/logo inside 1546x423 safe zone."},
+  "yt-community": {"id":"yt-community","width":1200,"height":1200,"platform":"youtube","kind":"post","notes":"Community post square."},
+  "yt-shorts": {"id":"yt-shorts","width":1080,"height":1920,"platform":"youtube","kind":"story","notes":"Shorts still / cover 9:16."},
+
+  "x-post": {"id":"x-post","width":1600,"height":900,"platform":"x","kind":"post","notes":"In-feed landscape 16:9."},
+  "x-post-square": {"id":"x-post-square","width":1080,"height":1080,"platform":"x","kind":"post","notes":"In-feed square."},
+  "x-post-portrait": {"id":"x-post-portrait","width":1080,"height":1350,"platform":"x","kind":"post","notes":"In-feed portrait 4:5."},
+  "x-pfp": {"id":"x-pfp","width":400,"height":400,"platform":"x","kind":"pfp","notes":"Profile photo. Displayed ~128 in feed."},
+  "x-cover": {"id":"x-cover","width":1500,"height":500,"platform":"x","kind":"cover","notes":"Header 3:1. PFP overlaps on mobile."},
+  "x-card": {"id":"x-card","width":1200,"height":630,"platform":"x","kind":"og","notes":"Link card / Open Graph."},
+
+  "ig-post": {"id":"ig-post","width":1080,"height":1350,"platform":"instagram","kind":"post","notes":"Feed portrait 4:5. Preferred over square for reach."},
+  "ig-post-square": {"id":"ig-post-square","width":1080,"height":1080,"platform":"instagram","kind":"post","notes":"Feed square 1:1."},
+  "ig-post-landscape": {"id":"ig-post-landscape","width":1080,"height":566,"platform":"instagram","kind":"post","notes":"Feed landscape. Avoid if possible."},
+  "ig-story": {"id":"ig-story","width":1080,"height":1920,"platform":"instagram","kind":"story","safe":{"topPct":14,"bottomPct":14},"notes":"Stories and Reels. Keep type out of top/bottom 14%."},
+  "ig-pfp": {"id":"ig-pfp","width":320,"height":320,"platform":"instagram","kind":"pfp","notes":"Profile photo. Circle crop. Center the mark."},
+  "ig-carousel": {"id":"ig-carousel","width":1080,"height":1350,"platform":"instagram","kind":"post","notes":"Carousel frame. Same size as ig-post."},
+
+  "fb-post": {"id":"fb-post","width":1080,"height":1350,"platform":"facebook","kind":"post","notes":"Feed vertical 4:5."},
+  "fb-post-square": {"id":"fb-post-square","width":1080,"height":1080,"platform":"facebook","kind":"post","notes":"Feed square."},
+  "fb-post-link": {"id":"fb-post-link","width":1200,"height":630,"platform":"facebook","kind":"og","notes":"Link preview 1.91:1."},
+  "fb-cover": {"id":"fb-cover","width":851,"height":315,"platform":"facebook","kind":"cover","notes":"Page/profile cover."},
+  "fb-cover-event": {"id":"fb-cover-event","width":1920,"height":1005,"platform":"facebook","kind":"cover","notes":"Event cover."},
+  "fb-group-cover": {"id":"fb-group-cover","width":1640,"height":856,"platform":"facebook","kind":"cover","notes":"Group cover."},
+  "fb-pfp": {"id":"fb-pfp","width":320,"height":320,"platform":"facebook","kind":"pfp","notes":"Profile photo."},
+  "fb-story": {"id":"fb-story","width":1080,"height":1920,"platform":"facebook","kind":"story","safe":{"topPct":14,"bottomPct":14},"notes":"Stories. Same as IG story."},
+
+  "reddit-post": {"id":"reddit-post","width":1080,"height":1350,"platform":"reddit","kind":"post","notes":"Shareable post. 4:5 reads well in feed."},
+  "reddit-post-og": {"id":"reddit-post-og","width":1200,"height":628,"platform":"reddit","kind":"og","notes":"Link-style landscape post."},
+  "reddit-pfp": {"id":"reddit-pfp","width":256,"height":256,"platform":"reddit","kind":"pfp","notes":"Avatar. Circle crop."},
+  "reddit-banner": {"id":"reddit-banner","width":1920,"height":384,"platform":"reddit","kind":"cover","notes":"Subreddit/profile banner ~5:1."},
+
+  "li-post": {"id":"li-post","width":1200,"height":627,"platform":"linkedin","kind":"post","notes":"Feed / link image 1.91:1."},
+  "li-post-square": {"id":"li-post-square","width":1200,"height":1200,"platform":"linkedin","kind":"post","notes":"Feed square."},
+  "li-pfp": {"id":"li-pfp","width":400,"height":400,"platform":"linkedin","kind":"pfp","notes":"Profile photo."},
+  "li-cover": {"id":"li-cover","width":1584,"height":396,"platform":"linkedin","kind":"cover","notes":"Personal cover."},
+  "li-company-cover": {"id":"li-company-cover","width":1128,"height":191,"platform":"linkedin","kind":"cover","notes":"Company page cover."},
+
+  "tiktok-post": {"id":"tiktok-post","width":1080,"height":1920,"platform":"tiktok","kind":"story","notes":"In-feed and stories 9:16."},
+  "tiktok-pfp": {"id":"tiktok-pfp","width":200,"height":200,"platform":"tiktok","kind":"pfp","notes":"Profile photo. Keep mark centered."},
+
+  "threads-post": {"id":"threads-post","width":1080,"height":1080,"platform":"threads","kind":"post","notes":"Square post."},
+  "threads-pfp": {"id":"threads-pfp","width":320,"height":320,"platform":"threads","kind":"pfp","notes":"Profile photo."},
+
+  "pin-post": {"id":"pin-post","width":1000,"height":1500,"platform":"pinterest","kind":"post","notes":"Standard pin 2:3."},
+  "pin-pfp": {"id":"pin-pfp","width":165,"height":165,"platform":"pinterest","kind":"pfp","notes":"Profile photo."},
+  "pin-cover": {"id":"pin-cover","width":800,"height":450,"platform":"pinterest","kind":"cover","notes":"Board cover."},
+
+  "snap-story": {"id":"snap-story","width":1080,"height":1920,"platform":"snapchat","kind":"story","notes":"Full-screen story."},
+  "snap-pfp": {"id":"snap-pfp","width":320,"height":320,"platform":"snapchat","kind":"pfp","notes":"Bitmoji/profile."},
+
+  "og-card": {"id":"og-card","width":1200,"height":630,"platform":"web","kind":"og","notes":"Open Graph / Twitter card / generic link preview."},
+  "og-square": {"id":"og-square","width":1200,"height":1200,"platform":"web","kind":"og","notes":"Square share card."},
+
+  "pfp-512": {"id":"pfp-512","width":512,"height":512,"platform":"general","kind":"pfp","notes":"Generic avatar. Discord, Slack, most apps."},
+  "pfp-1024": {"id":"pfp-1024","width":1024,"height":1024,"platform":"general","kind":"pfp","notes":"High-res avatar source. Circle-safe."},
+
+  "thumb-16-9": {"id":"thumb-16-9","width":1280,"height":720,"platform":"general","kind":"thumbnail","notes":"Generic 16:9 thumbnail."},
+  "thumb-blog": {"id":"thumb-blog","width":1200,"height":630,"platform":"general","kind":"thumbnail","notes":"Blog / CMS featured image."},
+
+  "hd-landscape": {"id":"hd-landscape","width":1920,"height":1080,"platform":"general","kind":"frame","notes":"Standard landscape frame / video."},
+  "square-1080": {"id":"square-1080","width":1080,"height":1080,"platform":"general","kind":"social","notes":"Square social / ad frame."},
+  "story-1080": {"id":"story-1080","width":1080,"height":1920,"platform":"general","kind":"social","notes":"Vertical story / reel / Shorts."},
+  "poster-a5": {"id":"poster-a5","width":1748,"height":2480,"platform":"print","kind":"poster","notes":"A5 at 300dpi. Digital flyer."}
+}

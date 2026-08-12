@@ -1,0 +1,63 @@
+{
+  "name": "html-marketing",
+  "version": "1.0.0",
+  "description": "Write HTML. Render store and social creatives. Built for agents.",
+  "type": "module",
+  "bin": {
+    "html-marketing": "bin/html-marketing.mjs"
+  },
+  "files": [
+    "bin",
+    "cli",
+    "data",
+    "templates",
+    "prompts",
+    "skills",
+    "specs",
+    "projects/demo-extension",
+    "DESIGN.md",
+    "AGENTS.md",
+    "LICENSE",
+    "skills-manifest.json"
+  ],
+  "scripts": {
+    "doctor": "node bin/html-marketing.mjs doctor",
+    "preview": "node bin/html-marketing.mjs preview",
+    "lint": "node bin/html-marketing.mjs lint",
+    "check": "node bin/html-marketing.mjs check",
+    "render": "node bin/html-marketing.mjs render",
+    "test": "node --test tests/sizes.test.mjs tests/lint.test.mjs tests/cli.test.mjs tests/visual.test.mjs",
+    "test:visual": "node tests/visual.test.mjs",
+    "prepublishOnly": "node --test tests/sizes.test.mjs tests/lint.test.mjs tests/cli.test.mjs tests/visual.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "commander": "^14.0.0",
+    "playwright": "^1.55.0",
+    "yaml": "^2.8.0"
+  },
+  "license": "MIT",
+  "author": "Nicholas Davis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholasxdavis/html-marketing.git"
+  },
+  "homepage": "https://github.com/nicholasxdavis/html-marketing#readme",
+  "bugs": {
+    "url": "https://github.com/nicholasxdavis/html-marketing/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "html",
+    "screenshots",
+    "app-store",
+    "chrome-web-store",
+    "playwright",
+    "marketing",
+    "agents"
+  ]
+}
