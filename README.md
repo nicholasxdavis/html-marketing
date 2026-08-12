@@ -99,11 +99,6 @@ Demo campaign (Northline). Field + Caption + Device. Atlas field. Harbor split.
   <img src="docs/assets/examples/marquee.png" alt="Marquee 1400x560" width="700" />
 </p>
 
-Portrait iPhone 6.9 class (1320x2868):
-
-<p>
-  <img src="docs/assets/examples/ios-6-9-hook.png" alt="iPhone 6.9 hook" width="280" />
-</p>
 
 ## Authoring rules
 
