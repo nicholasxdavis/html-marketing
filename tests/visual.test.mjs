@@ -24,6 +24,17 @@ test("hook screenshot exports 1280x800", async () => {
   fs.unlinkSync(out);
 });
 
+test("iPhone 6.9 hook exports 1320x2868", async () => {
+  const html = path.join(root, "templates/app-store/screenshot/01-hook.html");
+  const out = path.join(os.tmpdir(), `hm-ios-${Date.now()}.png`);
+  await renderPreset(html, out, "ios-6-9");
+  const buf = fs.readFileSync(out);
+  const { width, height } = pngSize(buf);
+  assert.equal(width, 1320);
+  assert.equal(height, 2868);
+  fs.unlinkSync(out);
+});
+
 test("promo tile exports 440x280", async () => {
   const html = path.join(root, "projects/demo-extension/promo/promo.html");
   const out = path.join(os.tmpdir(), `hm-tile-${Date.now()}.png`);

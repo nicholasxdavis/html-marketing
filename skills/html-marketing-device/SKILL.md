@@ -17,7 +17,7 @@ Pick one style for the whole set.
 | `.phone.frameless` | UI is the hero |
 | `.browser` | Chrome extensions, Mac, web apps |
 
-Portrait: `layout-caption-top`, device width ~70%, overflow the bottom.
+Portrait: `layout-caption-top`, device width ~82%, overflow the bottom. Caption stays above the phone.
 Landscape: `layout-split`, browser translate(48px, 36px) on every frame.
 
 Do not mix phone and browser in one 5-frame set unless the product truly spans both.

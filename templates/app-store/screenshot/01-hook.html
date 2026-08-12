@@ -8,24 +8,108 @@
     <link rel="stylesheet" href="../../shared/layouts.css" />
     <style>
       body, .canvas { width: 1320px; height: 2868px; }
-      .headline { font-size: 92px; }
-      .support { font-size: 32px; max-width: 980px; }
-      .brand { font-size: 22px; }
+      .headline { font-size: 84px; }
+      .support { font-size: 30px; max-width: 920px; }
+      .brand { font-size: 20px; }
       .ui {
         height: 100%;
         background: #f6f7f8;
-        padding: 72px 28px 28px;
+        padding: 36px 12px 12px;
         font-family: var(--font-body);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
       }
       .search {
-        height: 64px; border-radius: 14px; background: #fff; border: 1px solid #e4e8ec;
-        display: flex; align-items: center; padding: 0 20px; font-size: 22px; color: #101418; margin-bottom: 20px;
+        height: 36px;
+        border-radius: 10px;
+        background: #fff;
+        border: 1px solid #e4e8ec;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        font-size: 13px;
+        line-height: 1;
+        color: #101418;
+        flex-shrink: 0;
+      }
+      .meta {
+        font-size: 11px;
+        color: #5a6570;
+        margin: 0 4px;
+        flex-shrink: 0;
       }
       .row {
-        height: 72px; border-radius: 14px; background: #fff; margin-bottom: 12px;
-        display: flex; align-items: center; padding: 0 20px; color: #5a6570; font-size: 22px;
+        height: 40px;
+        border-radius: 10px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12px;
+        color: #5a6570;
+        font-size: 13px;
+        flex-shrink: 0;
       }
       .row.active { background: #d8f3e7; color: #101418; font-weight: 600; }
+      .row span { font-size: 11px; color: #8a939c; font-weight: 400; }
+      .preview {
+        background: #fff;
+        border-radius: 12px;
+        border: 1px solid #e4e8ec;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex-shrink: 0;
+      }
+      .preview h2 {
+        margin: 0;
+        font-size: 15px;
+        font-weight: 700;
+        color: #101418;
+      }
+      .preview p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.35;
+        color: #5a6570;
+      }
+      .chip {
+        align-self: flex-start;
+        background: #d8f3e7;
+        color: #0b3d2e;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 3px 7px;
+      }
+      .sheet-row {
+        display: flex;
+        justify-content: space-between;
+        background: #f6f7f8;
+        border-radius: 8px;
+        padding: 8px 10px;
+        font-size: 12px;
+        color: #101418;
+      }
+      .sheet-row span { color: #5a6570; }
+      .dock {
+        margin-top: 4px;
+        height: 40px;
+        border-radius: 12px;
+        background: #fff;
+        border: 1px solid #e4e8ec;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: #5a6570;
+        font-size: 9px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        flex-shrink: 0;
+      }
+      .dock b { color: #101418; font-weight: 600; }
     </style>
   </head>
   <body>
@@ -41,11 +125,22 @@
           <div class="phone-screen">
             <div class="ui">
               <div class="search">pricing research</div>
-              <div class="row">Project brief - Q3</div>
-              <div class="row active">Pricing research</div>
-              <div class="row">Design references</div>
-              <div class="row">Customer notes</div>
-              <div class="row">Archive</div>
+              <p class="meta">4 matches in this window</p>
+              <div class="row active">Pricing research <span>now</span></div>
+              <div class="preview">
+                <div class="chip">Open tab</div>
+                <h2>Q3 pricing research</h2>
+                <p>Competitor tiers and last week's review. Jump here without hunting.</p>
+                <div class="sheet-row"><b>Starter</b><span>$12 / mo</span></div>
+                <div class="sheet-row"><b>Team</b><span>$29 / mo</span></div>
+                <div class="sheet-row"><b>Business</b><span>$79 / mo</span></div>
+              </div>
+              <div class="row">Design references <span>figma</span></div>
+              <div class="row">Customer notes <span>notion</span></div>
+              <div class="row">Project brief - Q3 <span>docs</span></div>
+              <div class="row">Launch checklist <span>today</span></div>
+              <div class="row">Competitor sheet <span>sheet</span></div>
+              <div class="dock"><b>Search</b> Tabs Recents</div>
             </div>
           </div>
         </div>
