@@ -1,18 +1,21 @@
+import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderImage, renderPreset } from "../cli/lib/render-image.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const demo = path.join(root, "projects/demo-extension");
-const out = path.join(root, "docs/assets/examples");
+const out = path.join(root, "docs/assets/studio");
 const wait = { waitMs: 800 };
+
+fs.mkdirSync(out, { recursive: true });
 
 await renderImage(
   path.join(root, "templates/brand/logo.html"),
-  path.join(root, "docs/assets/logo.png"),
-  { width: 1400, height: 420, ...wait },
+  path.join(root, "docs/assets/header.png"),
+  { width: 1400, height: 480, ...wait },
 );
-console.log("logo");
+console.log("header");
 
 const shots = [
   ["01-hook", "screenshots/01-hook.html", "cws-screenshot"],
