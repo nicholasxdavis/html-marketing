@@ -76,37 +76,6 @@ npx html-marketing skills update store-listing
 
 `render` with no file reads `manifest.yaml`.
 
-## Examples
-
-Demo campaign (Northline). Studio card. Remade command UI.
-
-<p>
-  <img src="docs/assets/studio/01-hook.png" alt="Hook screenshot 1280x800" width="640" />
-</p>
-
-<p>
-  <img src="docs/assets/studio/02-mechanism.png" alt="Mechanism screenshot 1280x800" width="640" />
-</p>
-
-<p>
-  <img src="docs/assets/studio/03-differentiator.png" alt="Differentiator screenshot 1280x800" width="640" />
-</p>
-
-<p>
-  <img src="docs/assets/studio/04-benefit.png" alt="Benefit screenshot 1280x800" width="640" />
-</p>
-
-<p>
-  <img src="docs/assets/studio/05-trust.png" alt="Trust screenshot 1280x800" width="640" />
-</p>
-
-<p>
-  <img src="docs/assets/studio/promo-tile.png" alt="Promo tile 440x280" width="440" />
-  &nbsp;
-  <img src="docs/assets/studio/marquee.png" alt="Marquee 1400x560" width="700" />
-</p>
-
-
 ## Authoring rules
 
 1. Look up the size. `npx html-marketing sizes <platform-or-id>`.
