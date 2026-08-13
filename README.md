@@ -6,7 +6,6 @@
   <a href="#quick-start">Quickstart</a> ·
   <a href="#skills">Skills</a> ·
   <a href="#cli">CLI</a> ·
-  <a href="#examples">Examples</a>
 </p>
 
 html-marketing turns HTML into pixel-exact App Store, Play Store, Chrome Web Store, and social images, plus short MP4s. Author on a fixed canvas. Preview in the browser. Export locally with Playwright and FFmpeg.
