@@ -69,8 +69,8 @@ export function initProject(name, options = {}) {
     `name: ${name}
 product: ${name}
 platform: chrome-web-store
-style: atlas
-layout: harbor
+style: studio
+layout: studio
 
 assets:
   - name: 01-hook
@@ -116,13 +116,15 @@ assets:
     `# Brief
 
 workflow: store-listing
-style: atlas
-layout: harbor
+style: studio
+layout: studio
 platform: chrome-web-store
 
-Replace the Northline copy with your product. Keep Field + Caption + Device.
-Do not invent a look. Paste prompts/styles/atlas.md.
+Replace the Northline copy with your product. Remake UI from source at native width.
+Do not invent a look. Paste prompts/styles/studio.md.
+Promo tiles: brand color + type. No remade UI.
 Look up sizes: npx html-marketing sizes cws-screenshot
+Harbor and Atlas are off unless this brief names them.
 `,
   );
 

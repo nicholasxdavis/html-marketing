@@ -1,10 +1,12 @@
 # STYLE: Harbor
 
+Off by default. Use `prompts/styles/studio.md` unless BRIEF explicitly names harbor.
+
 Landscape split for Chrome Web Store and Mac listings. Caption column. Large browser.
 
 ## Use when
 
-Chrome extensions, web apps, Mac App Store, any 16:10 or 16:9 store frame.
+Only if BRIEF names harbor. Studio is the default for Chrome extensions, web apps, and Mac listings.
 
 ## Tokens
 

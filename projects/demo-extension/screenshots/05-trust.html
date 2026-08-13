@@ -4,46 +4,43 @@
     <meta charset="UTF-8" />
     <title>Trust</title>
     <link rel="stylesheet" href="../shared/tokens.css" />
-    <link rel="stylesheet" href="../shared/device.css" />
-    <link rel="stylesheet" href="../shared/layouts.css" />
+    <link rel="stylesheet" href="../shared/studio.css" />
     <style>
       body, .canvas { width: 1280px; height: 800px; }
-      .headline { font-size: 56px; }
-      .support { font-size: 20px; max-width: 440px; }
-      .points {
-        position: absolute; inset: 48px;
-        display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;
+      :root {
+        --field: #07140f;
+        --field-glow: rgba(31, 169, 113, 0.28);
+        --accent: #1fa971;
+        --accent-light: #86efac;
+        --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%231fa971' stroke-width='1.6'%3E%3Ccircle cx='48' cy='48' r='16'/%3E%3Cpath d='M60 60 74 74'/%3E%3C/g%3E%3C/svg%3E");
       }
-      .point {
-        background: #fff; border: 1px solid #e4e8ec; border-radius: 12px; padding: 22px 18px;
-      }
-      .point h2 {
-        margin: 0 0 8px; font-family: var(--font-display); font-size: 18px; letter-spacing: -0.02em; color: #101418;
-      }
-      .point p { margin: 0; font-size: 13px; line-height: 1.4; color: #5a6570; }
     </style>
   </head>
-  <body>
-    <div class="canvas field-atlas layout-split" data-beat="trust">
-      <div class="copy">
-        <div class="brand">Northline</div>
-        <h1 class="headline">Private by default. Local first.</h1>
-        <p class="support">Your browsing stays on your machine. No account for core search.</p>
-      </div>
-      <div class="device-stage">
-        <div class="browser">
-          <div class="browser-chrome">
-            <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-            <div class="browser-omnibox">northline.app</div>
-          </div>
-          <div class="browser-body">
-            <div class="points">
-              <div class="point"><h2>100% local</h2><p>Search runs on your device. Nothing uploaded for basic use.</p></div>
-              <div class="point"><h2>No account</h2><p>Install and use. Skip the signup wall.</p></div>
-              <div class="point"><h2>Minimal access</h2><p>Only what is needed to index your own tabs.</p></div>
+  <body class="shot">
+    <div class="canvas shot" data-beat="trust">
+      <div class="card">
+        <div class="head">
+          <div class="brand-row">Northline</div>
+          <h1>Private by default.<br /><em>Local first.</em></h1>
+        </div>
+        <div class="product-ui panel">
+          <div class="ui-head"><strong>Privacy</strong><div class="ui-chip">On</div></div>
+          <div class="ui-rows">
+            <div class="ui-row active">
+              <div class="ui-left"><div class="ui-copy"><strong>100% local</strong><span>Search runs on your device</span></div></div>
+              <div class="toggle on"></div>
+            </div>
+            <div class="ui-row">
+              <div class="ui-left"><div class="ui-copy"><strong>No account</strong><span>Install and use. Skip signup</span></div></div>
+              <div class="toggle on"></div>
+            </div>
+            <div class="ui-row">
+              <div class="ui-left"><div class="ui-copy"><strong>Minimal access</strong><span>Only what is needed to index tabs</span></div></div>
+              <div class="toggle on"></div>
             </div>
           </div>
         </div>
+        <p class="foot">Your browsing stays on your machine. <em>No account required.</em></p>
       </div>
     </div>
   </body>

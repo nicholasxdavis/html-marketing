@@ -28,6 +28,8 @@ npx html-marketing specs icons
 
 Phosphor Icons Regular only.
 
+Default style is Studio (`prompts/styles/studio.md`). Harbor and Atlas are off unless BRIEF names them. Remake product UI from source. Promo tiles have no remade UI. RSI the exported PNGs.
+
 ## Loop
 
 ```bash

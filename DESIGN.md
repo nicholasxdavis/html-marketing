@@ -29,13 +29,15 @@ If you need a new look, add a new prompt file. Do not freestyle.
 
 ## Anatomy of a store frame
 
-Every screenshot is three elements:
+Studio default. Every screenshot is:
 
-1. **Field** - solid or quiet gradient. One color family for the whole set.
-2. **Caption** - brand mark (optional, small), headline, one support line.
-3. **Device** - phone, tablet, or browser frame holding the product UI.
+1. **Field** - dark wash tinted with brand accent.
+2. **Card** - one rounded rectangle, centered, faint product-icon pattern.
+3. **Proof** - remade product UI at native width. Not a pasted live screenshot.
 
-That is the whole composition. Shapes, doodles, badges, and glow stacks are noise.
+Promo tiles are brand color + type. No remade UI.
+
+Harbor split (caption left + fake browser) is off unless BRIEF names it.
 
 Lock these across the set:
 

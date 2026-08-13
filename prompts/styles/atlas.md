@@ -1,5 +1,7 @@
 # STYLE: Atlas
 
+Off by default. Use `prompts/styles/studio.md` unless BRIEF explicitly names atlas.
+
 Dark green field. White type. Overflowing real device. Default for serious products.
 
 ## Use when

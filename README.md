@@ -33,7 +33,7 @@ npx skills add nicholasxdavis/html-marketing --full-depth
 npx html-marketing skills update store-listing
 ```
 
-> Using `/html-marketing`, create a Chrome Web Store screenshot set for a local tab search extension. Style Atlas. Five beats: hook, mechanism, differentiator, benefit, trust.
+> Using `/html-marketing`, create a Chrome Web Store screenshot set for a local tab search extension. Style Studio. Remake the popup from source. Five beats: hook, mechanism, differentiator, benefit, trust.
 
 ### Manually with the CLI
 
@@ -75,7 +75,7 @@ npx html-marketing preview
 npx html-marketing render
 npx html-marketing render path.html -o out.png --preset cws-screenshot
 npx html-marketing video path.html -o out.mp4 --duration 4 --fps 30
-npx html-marketing prompts atlas
+npx html-marketing prompts studio
 npx html-marketing skills update store-listing
 ```
 
@@ -83,7 +83,7 @@ npx html-marketing skills update store-listing
 
 ## Examples
 
-Demo campaign (Northline). Field + Caption + Device. Atlas field. Harbor split.
+Demo campaign (Northline). Studio card. Remade command UI. No Harbor split.
 
 <p>
   <img src="docs/assets/examples/01-hook.png" alt="Hook screenshot 1280x800" width="640" />
@@ -103,11 +103,12 @@ Demo campaign (Northline). Field + Caption + Device. Atlas field. Harbor split.
 ## Authoring rules
 
 1. Look up the size. `npx html-marketing sizes <platform-or-id>`.
-2. Paste one prompt from `prompts/`. Do not invent a look.
-3. `body` and `.canvas` match the preset. Field + Caption + Device.
-4. Phosphor Regular for icons. No emoji. No em dashes.
-5. Video implements `window.__hm.seek(t)`.
-6. `lint` and `check` must pass before `render`.
+2. Paste `prompts/styles/studio.md` unless BRIEF names another style.
+3. `body` and `.canvas` match the preset. Studio card. Remade UI at native width.
+4. Promo tiles: brand color + type. No remade UI.
+5. Phosphor Regular for icons. No emoji. No em dashes.
+6. Video implements `window.__hm.seek(t)`.
+7. `lint` and `check` must pass before `render`. Then RSI the PNGs.
 
 ## License
 

@@ -4,56 +4,43 @@
     <meta charset="UTF-8" />
     <title>Differentiator</title>
     <link rel="stylesheet" href="../../shared/tokens.css" />
-    <link rel="stylesheet" href="../../shared/device.css" />
-    <link rel="stylesheet" href="../../shared/layouts.css" />
+    <link rel="stylesheet" href="../../shared/studio.css" />
     <style>
       body, .canvas { width: 1280px; height: 800px; }
-      .headline { font-size: 56px; }
-      .support { font-size: 20px; max-width: 420px; }
-      .compare {
-        position: absolute; inset: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      :root {
+        --field: #07140f;
+        --field-glow: rgba(31, 169, 113, 0.28);
+        --accent: #1fa971;
+        --accent-light: #86efac;
+        --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%231fa971' stroke-width='1.6'%3E%3Ccircle cx='48' cy='48' r='16'/%3E%3Cpath d='M60 60 74 74'/%3E%3C/g%3E%3C/svg%3E");
       }
-      .col {
-        background: #fff; border-radius: 12px; padding: 22px; border: 1px solid #e4e8ec;
-      }
-      .col.good { outline: 2px solid rgba(11, 110, 79, 0.35); }
-      .label { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #5a6570; margin-bottom: 16px; font-weight: 600; }
-      .col.good .label { color: #0b6e4f; }
-      .line { height: 12px; border-radius: 6px; background: #eceff2; margin-bottom: 10px; }
-      .metric { margin-top: 18px; font-family: var(--font-display); font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
     </style>
   </head>
-  <body>
-    <div class="canvas field-atlas layout-split" data-beat="differentiator">
-      <div class="copy">
-        <div class="brand">Northline</div>
-        <h1 class="headline">Twenty minutes becomes twenty seconds.</h1>
-        <p class="support">Stay in flow. Let search do the walking.</p>
-      </div>
-      <div class="device-stage">
-        <div class="browser">
-          <div class="browser-chrome">
-            <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
-            <div class="browser-omnibox">northline.app</div>
-          </div>
-          <div class="browser-body">
-            <div class="compare">
-              <div class="col">
-                <div class="label">Without</div>
-                <div class="line" style="width:80%"></div>
-                <div class="line" style="width:62%"></div>
-                <div class="line" style="width:44%"></div>
-                <div class="metric" style="color:#5a6570">~20 min</div>
-              </div>
-              <div class="col good">
-                <div class="label">With Northline</div>
-                <div class="line" style="width:56%;background:#d8f3e7"></div>
-                <div class="line" style="width:38%;background:#d8f3e7"></div>
-                <div class="metric" style="color:#0b6e4f">~20 sec</div>
-              </div>
+  <body class="shot">
+    <div class="canvas shot" data-beat="differentiator">
+      <div class="card">
+        <div class="head">
+          <div class="brand-row">Northline</div>
+          <h1>Twenty minutes<br /><em>becomes twenty seconds.</em></h1>
+        </div>
+        <div class="product-ui panel">
+          <div class="ui-head"><strong>Northline</strong><div class="ui-chip">Match</div></div>
+          <div class="ui-rows">
+            <div class="ui-row">
+              <div class="ui-left"><div class="ui-copy"><strong>Without search</strong><span>About 20 min of tab hunting</span></div></div>
+              <div class="toggle"></div>
+            </div>
+            <div class="ui-row active">
+              <div class="ui-left"><div class="ui-copy"><strong>With Northline</strong><span>About 20 sec to the page</span></div></div>
+              <div class="toggle on"></div>
+            </div>
+            <div class="ui-row">
+              <div class="ui-left"><div class="ui-copy"><strong>Stay in flow</strong><span>Let search do the walking</span></div></div>
+              <div class="toggle on"></div>
             </div>
           </div>
         </div>
+        <p class="foot">Stay in flow. <em>Let search do the walking.</em></p>
       </div>
     </div>
   </body>

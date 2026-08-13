@@ -2,32 +2,31 @@
 
 You are authoring a complete store listing set as HTML canvases, then exporting with html-marketing.
 
-Do not invent a visual system. Load one style prompt from `prompts/styles/` and obey it.
+Do not invent a visual system. Load `prompts/styles/studio.md` unless BRIEF names another style.
 
 ## Inputs you must collect
 
 - Product name
-- One sentence outcome
+- One sentence outcome that names real features
 - Platform: chrome-web-store | app-store | google-play
-- True product UI (what the inner screen actually shows)
+- Path to real UI source (packed/, popup HTML, app source)
 - Five beat headlines (hook, mechanism, differentiator, benefit, trust)
 - One support line per beat, max 12 words
+- Accent and accent-light hex
 
 ## Locked structure
 
-Each frame = Field + Caption + Device.
+Studio: Field + Card + remade product UI at native width.
 
-Use the layout named by the style prompt:
+- Chrome / web: remade popup or panel. 340px or ~480px. No fake browser.
+- iPhone / Play portrait: remade screen, 390px, frameless unless BRIEF asks
+- Promo 440x280: brand tile. No remade UI
 
-- Chrome / Mac: `layout-split` or `layout-marquee`
-- iPhone / Play portrait: `layout-caption-top`
-- Promo 440x280: `layout-tile` (no device)
-
-Keep device x/y/width/height identical on every screenshot in the set.
+Keep proof width identical on every screenshot in the set. Drop rows on the marquee if needed.
 
 ## Files to produce
 
-Match `projects/<name>/manifest.yaml`.
+Match `manifest.yaml`.
 
 Typical Chrome set:
 
@@ -39,7 +38,7 @@ Typical Chrome set:
 6. `promo/promo.html` 440x280
 7. `promo/marquee.html` 1400x560
 
-Typical iPhone set (same copy, `layout-caption-top`, preset `ios-6-9`):
+Typical iPhone set (same copy, Studio portrait card, preset `ios-6-9`):
 
 1. Five portrait frames at 1320x2868
 
@@ -48,17 +47,18 @@ Typical iPhone set (same copy, `layout-caption-top`, preset `ios-6-9`):
 - No emojis
 - No em dashes
 - No install CTAs
-- No second accent color
-- No cards in the caption column
-- No fake UI
-- Link `../../../templates/shared/tokens.css`, `device.css`, `layouts.css`
+- No `transform: scale()` on product UI
+- No live screenshot dumps
+- Link `shared/tokens.css` and `shared/studio.css`
 - Set `body` and `.canvas` to the exact preset size
 - Inner UI must stay large enough to read
 
 ## After HTML
 
-```text
-html-marketing project-render projects/<name>
+```bash
+npx html-marketing lint
+npx html-marketing check
+npx html-marketing render
 ```
 
-Then check the two-second test on the first three frames.
+Then RSI. Two-second test on every PNG.

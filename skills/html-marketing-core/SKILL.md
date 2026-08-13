@@ -19,14 +19,14 @@ npx html-marketing sizes <id>
 body, .canvas { width: 1280px; height: 800px; }
 ```
 
-Link shared CSS:
+Link shared CSS. Studio is default:
 
 ```html
 <link rel="stylesheet" href="../shared/tokens.css" />
-<link rel="stylesheet" href="../shared/device.css" />
-<link rel="stylesheet" href="../shared/layouts.css" />
-<link rel="stylesheet" href="../shared/icons.css" />
+<link rel="stylesheet" href="../shared/studio.css" />
 ```
+
+Legacy Harbor still has `device.css` and `layouts.css`. Do not use them unless BRIEF names harbor or atlas.
 
 ## Icons
 
@@ -39,14 +39,14 @@ Phosphor Regular only. `currentColor`. 16 / 24 / 32 / 48. Zero or one on a promo
 
 ## Anatomy
 
-Every frame is Field + Caption + Device.
+Studio default: Field + Card + Proof.
 
-- Field: `.field-atlas` (or the style in BRIEF.md)
-- Caption: `.brand`, `.headline`, `.support`
-- Device: `.browser` or `.phone` inside `.device-stage`
-- Layout: `.layout-split`, `.layout-caption-top`, `.layout-tile`, `.layout-marquee`, `.layout-feed`, `.layout-thumb`
+- Field: dark wash tinted with brand accent
+- Card: one rounded rectangle, centered, faint product-icon pattern
+- Proof: remade product UI at native width (Chrome popup 340px, web panel ~480px, phone ~390px)
+- Promo: accent-light field, white type, **no remade UI**
 
-Lock device transform, size, and field across the set. Change only copy and inner UI.
+Never `transform: scale()` the product UI. If the frame is short, drop rows. Keep width.
 
 ## Manifest
 
@@ -64,4 +64,4 @@ No `Date.now()`, no unseeded `Math.random()`, no network fetches at render time 
 
 ## Forbidden
 
-Emojis. Em dashes. Install CTAs. Mixing device styles in one set. Shrinking a full dashboard until it is unreadable. Inventing canvas sizes. Mixing icon packs.
+Emojis. Em dashes. Install CTAs. Mixing device styles in one set. Shrinking a full dashboard until it is unreadable. Inventing canvas sizes. Mixing icon packs. Pasting live screenshots into fake browser chrome. UI on 440x280 promo tiles.

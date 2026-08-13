@@ -1,12 +1,11 @@
 name: demo-extension
 product: Northline
 platform: chrome-web-store
-style: atlas
-layout: harbor
+style: studio
+layout: studio
 notes: >
-  First html-marketing project. Abstract UI proof only. No platform logos.
+  Demo Studio set. Remade command UI at native width. No fake browser.
   Story: Hook, Mechanism, Differentiator, Benefit, Trust.
-  Locked geometry: layout-split + browser overflow. Field stays Atlas.
 
 assets:
   - name: 01-hook

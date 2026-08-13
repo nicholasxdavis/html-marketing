@@ -1,7 +1,7 @@
 {
   "name": "html-marketing",
-  "version": "1.0.0",
-  "description": "Write HTML. Render store and social creatives. Built for agents.",
+  "version": "1.0.1",
+  "description": "Write HTML. Render store and social creatives. Studio card. Built for agents.",
   "type": "module",
   "bin": {
     "html-marketing": "bin/html-marketing.mjs"
