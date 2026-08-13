@@ -19,17 +19,19 @@ Strong prompts are recipes, not moods.
 - Same content, swapped tokens. That is how a style explorer works.
 - Numbers beat adjectives. "Headline 64px, 3-7 words" beats "make it punchy".
 - A forbidden list is as important as the allowed list.
-- One style per set. Never mix Atlas with Clay inside five frames.
+- One style per set. Never mix Studio with Harbor inside five frames.
 
 ## Index
 
 | File | Use when |
 |------|----------|
 | `store-set.md` | Any new listing. Start here. |
+| `styles/studio.md` | Default. Card, icon pattern, remade UI. |
+| `rsi.md` | Inspect PNGs and repair. |
 | `copy.md` | Writing headlines only. |
 | `device.md` | Choosing a frame style. |
-| `styles/atlas.md` | Dark green field, white type, overflowing device. Default. |
-| `styles/harbor.md` | Landscape split for Chrome and Mac. |
+| `styles/atlas.md` | Legacy dark green field. Off unless BRIEF names it. |
+| `styles/harbor.md` | Legacy landscape split. Off unless BRIEF names it. |
 | `styles/meridian.md` | Light studio, real dark device. |
 | `styles/clay.md` | Matte clay device, warm gray field. |
 | `styles/ledger.md` | Serious product. Left type, no decoration. |
@@ -37,7 +39,7 @@ Strong prompts are recipes, not moods.
 Show one:
 
 ```text
-html-marketing prompts atlas
+html-marketing prompts studio
 html-marketing prompts store-set
 html-marketing sizes
 html-marketing specs

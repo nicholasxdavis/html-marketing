@@ -4,49 +4,57 @@
     <meta charset="UTF-8" />
     <title>html-marketing wordmark</title>
     <link rel="stylesheet" href="../shared/tokens.css" />
+    <link rel="stylesheet" href="../shared/studio.css" />
     <style>
-      body, .canvas {
-        width: 1400px;
-        height: 420px;
+      body, .canvas { width: 1400px; height: 420px; }
+      :root {
+        --field: #0b1220;
+        --field-glow: rgba(106, 168, 255, 0.22);
+        --accent: #6aa8ff;
+        --accent-light: #93c5fd;
+        --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%236aa8ff' stroke-width='1.6'%3E%3Crect x='28' y='34' width='64' height='44' rx='8'/%3E%3Cpath d='M40 78 52 96h16l12-18'/%3E%3C/g%3E%3C/svg%3E");
       }
-      .canvas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 80px;
-        gap: 14px;
+      .canvas::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0.12;
+        pointer-events: none;
+        background-image: var(--pattern);
+        background-size: 120px 120px;
       }
-      .mark {
+      .wordmark {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+      }
+      .wordmark h1 {
+        margin: 0;
         font-family: var(--font-display);
         font-weight: 800;
         font-size: 92px;
         letter-spacing: -0.06em;
         line-height: 0.92;
         color: #fff;
-        margin: 0;
       }
-      .mark span {
+      .wordmark h1 em {
+        font-style: normal;
         color: var(--accent);
       }
-      .tag {
-        margin: 0;
+      .wordmark p {
+        margin: 18px 0 0;
         font-size: 22px;
-        color: var(--type-muted);
-        letter-spacing: 0.02em;
-      }
-      .rule {
-        width: 120px;
-        height: 3px;
-        background: var(--accent);
-        margin-top: 4px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.78);
       }
     </style>
   </head>
   <body>
-    <div class="canvas field-atlas">
-      <p class="mark">html<span>-</span>marketing</p>
-      <div class="rule"></div>
-      <p class="tag">Write HTML. Render store creatives.</p>
+    <div class="canvas">
+      <div class="wordmark">
+        <h1>html<em>-</em>marketing</h1>
+        <p>Write HTML. Render store creatives.</p>
+      </div>
     </div>
   </body>
 </html>
