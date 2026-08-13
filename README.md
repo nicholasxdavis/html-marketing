@@ -106,11 +106,6 @@ Demo campaign (Northline). Studio card. Remade command UI.
   <img src="docs/assets/studio/marquee.png" alt="Marquee 1400x560" width="700" />
 </p>
 
-Portrait iPhone 6.9 (1320x2868):
-
-<p>
-  <img src="docs/assets/studio/ios-6-9-hook.png" alt="iPhone 6.9 hook 1320x2868" width="360" />
-</p>
 
 ## Authoring rules
 
